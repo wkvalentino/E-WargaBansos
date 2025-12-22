@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login — E-WargaBantuan</title>
+
+    <style>
+      /* ----- Color Tokens (sama seperti halaman utama) ----- */
+      :root {
+        --c-1: #a8e8f9;
+        --c-2: #00537a;
+        --c-3: #013c58;
+        --c-4: #f5a201;
+        --c-6: #ffd35b;
+
+        --bg-gradient: linear-gradient(180deg, var(--c-6) 0%, var(--c-1) 100%);
+        --card-bg: #ffffff;
+        --radius-lg: 18px;
+        --shadow-soft: 0 8px 18px rgba(2, 6, 23, 0.08);
+
+        font-family: Inter, system-ui, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg-gradient);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+      }
+
+      /* Card login */
+      .login-card {
+        width: 100%;
+        max-width: 420px;
+        background: white;
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-soft);
+        padding: 32px 28px;
+        animation: fade 0.3s ease-in-out;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h2 {
+        margin: 0 0 18px 0;
+        font-size: 26px;
+        text-align: center;
+        color: var(--c-3);
+        font-weight: 800;
+      }
+
+      /* form */
+      .label {
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: var(--c-3);
+      }
+
+      input {
+        width: 90%;
+        padding: 14px;
+        border-radius: 12px;
+        border: 1px solid #ddd;
+        outline: none;
+        font-size: 15px;
+        margin-bottom: 16px;
+        transition: 0.2s;
+      }
+
+      input:focus {
+        border-color: var(--c-4);
+        box-shadow: 0 0 0 3px rgba(245, 162, 1, 0.25);
+      }
+
+      button {
+        width: 100%;
+        padding: 14px;
+        margin-top: 4px;
+        background: var(--c-4);
+        border: 0;
+        border-radius: 12px;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0 6px 12px rgba(245, 162, 1, 0.22);
+      }
+
+      button:active {
+        transform: translateY(1px);
+      }
+    </style>
+  </head>
+
+  <body>
+   <div class="login-card">
+  <h2>Login Petugas</h2>
+
+  <form action="proses_login.php" method="POST">
+
+  <label class="label">Email</label>
+  <input type="text" name="username" placeholder="Masukkan Email" required />
+
+  <label class="label">Password</label>
+  <input type="password" name="password" placeholder="Masukkan password" required />
+
+  <button type="submit">Masuk</button>
+
+  </form>
+
+</div>
+
+  </body>
+</html>
