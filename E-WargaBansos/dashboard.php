@@ -272,8 +272,8 @@
           <th>Alamat</th>
           <th>Periode</th>
           <th>Status</th>
-          <th>Lokasi Penyaluran</th>
-          <th>Waktu Penyaluran</th>
+          <th>Lokasi Penerimaan</th>
+          <th>Waktu Penerimaan</th>
           <th>Status Tracking</th>
           <th>Aksi</th>
         </tr>
@@ -542,3 +542,4 @@ function closeEdit() {
 
 </body>
 </html>
+
