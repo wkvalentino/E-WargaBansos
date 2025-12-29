@@ -1,4 +1,4 @@
-# <center> Welcome E-WargaBansos </center>
+# <center> Welcome E-WargaBantuan </center>
 ## <span style="color:lightblue"><center>💸Sistem Informasi Tracking Bansos💸<center>
 
 🌐 <span style="color:orange">Tentang Aplikasi </span>
@@ -88,3 +88,4 @@ http://localhost/E-WargaBansos/api/penerima/penerima.php?nik=3571021401000001
         "status_tracking": "Sudah diterima"
     }
     ]
+
